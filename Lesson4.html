@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Урок CSS. Часть 4</title>
+	</head>
+<style>
+	body {
+		font: 1em Arial;
+		margin: 20px;
+	}
+	.container3 {
+		background: #999;
+		width: 300px;
+		height: 100px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	.container2 {
+		position: relative;
+		background: #999;
+		display: block;
+		max-width: 500px;
+		min-width: 350px;
+		height: 100px;
+		margin: 80px;
+	}
+	.container-inner {
+		background: #ccc;
+		margin: 10px;
+		position: fixed;
+		bottom: 0px;
+		top: 20px;
+		left:;
+		right: 20px;
+		z-index: 1;
+	}
+	.container {
+		background: #999;
+		display: block;
+		width: 300px;
+		height: 100px;
+		margin: 30px auto;
+		padding: 10px;
+	}	
+	a {
+		display: block;
+		background: #888;
+		width: 500px;
+		height: 100px;
+	}
+</style>
+	<body>
+		<div class="container3">
+		Google News is a news aggregator app developed by Google. It presents a continuous, customizable flow of articles organized from thousands of publishers and magazines. Google News is available as an app on Android, iOS, and the Web. Google released a beta version in September 2002 and the official app in January 2006.
+		</div>
+		<div class="container2">
+			<div class="container-inner">Содержание контента</div>
+		</div>
+		<div class="container">
+			Содержание контента
+		</div>
+		<div class="container">
+			Содержание контента
+		</div>
+		<div class="container">
+			Содержание контента
+		</div>
+		<a href='#'>Ссылка</a>
+		<a href='#'>Ссылка</a>
+		<a href='#'>Ссылка</a>
+	</body>
+</html>
