@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Урок CSS. Часть 10</title>
+	</head>
+<style>
+	.container {
+		display: inline-block;
+	}
+	.triangle-up {
+		width: 0px;
+		height: 0px;
+		border-bottom: 100px solid black;
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+	}
+	.triangle-down {
+		width: 0px;
+		height: 0px;
+		border-top: 100px solid black;
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+	}
+	.container2 {
+		width: 150px;
+		height: 80px;
+		background: #444;
+
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+
+		position: relative;
+	}
+	.container2:after {
+		content: '';
+		position: absolute;
+
+		border-top: 10px solid #444;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+
+		bottom: -10px;
+		left: 65px;
+	}
+</style>
+	<body>
+		<div class="container triangle-up"></div>
+		<div class="container triangle-down"></div>
+		<div class="container2"></div>
+	</body>
+</html>
